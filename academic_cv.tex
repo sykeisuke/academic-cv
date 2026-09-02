@@ -16,6 +16,7 @@
 \definecolor{LabOrange}{HTML}{EA6738}
 \definecolor{TextGray}{HTML}{26343A}
 \definecolor{RuleGray}{HTML}{CBD5D8}
+\definecolor{LabTint}{HTML}{F2F7F7}
 \hypersetup{
   pdftitle={Keisuke Yoshihara - Academic Curriculum Vitae},
   pdfauthor={Keisuke Yoshihara},
@@ -27,7 +28,7 @@
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{1.5pt}
 \setlist[description]{leftmargin=0.18in,labelsep=0.08in,itemsep=2pt,topsep=2pt}
-\setlist[enumerate]{leftmargin=0.28in,itemsep=3pt,topsep=3pt}
+\setlist[enumerate]{leftmargin=0.28in,itemsep=2pt,topsep=2pt}
 \renewcommand{\labelenumi}{[\arabic{enumi}]}
 
 \titleformat{\section}
@@ -66,6 +67,12 @@
 \vspace{4pt}
 \color{LabTeal}\rule{\textwidth}{2.2pt}
 \color{TextGray}
+
+\vspace{5pt}
+\fcolorbox{RuleGray}{LabTint}{%
+\parbox{\dimexpr\textwidth-2\fboxsep-2\fboxrule}{%
+{\small\textbf{\color{LabTeal}Research profile:} Experimental particle physics at Belle II and SuperKEKB, spanning searches for physics beyond the Standard Model, detector operation and readout, FPGA firmware development, and open-source mixed-signal ASIC design. Current instrumentation work includes ultrafast beam diagnostics with the bunch oscillation recorder (BOR) and silicon-based X-ray radiation monitor (SiXRM).}%
+}}
 
 %%%%%%%%%%%%%%%%%%%%%
 %%%%%%% Education   %%%%%%%%
